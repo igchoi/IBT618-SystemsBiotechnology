@@ -9,3 +9,7 @@
 #### Questions to be solved by the class project
 * Practicing [DADA2](https://benjjneb.github.io/dada2/index.html) pipeline to analyze amplcion data from Chinese Daqu samples.
 * 
+
+#### Preparation of amplicon data (reads)
+* where is the data?
+* 
