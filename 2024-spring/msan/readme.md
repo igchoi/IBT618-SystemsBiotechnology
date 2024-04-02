@@ -4,6 +4,7 @@
 ### Introduction
 * Data: publicly available marine heterotrophic bacteria grown on different carbon sources
   - where can I get the public data (raw reads)? [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra)
+  - search keyword: `(marine bacteria carbon source) AND "Zobellia galactanivorans"[orgn:__txid63186] `
 #### Background
 
 #### Links
