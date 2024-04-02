@@ -1,4 +1,5 @@
 # Class project
+## Title : Automated sequence tag
 -------- 
-
-# Background
+### Introduction
+#### Background
