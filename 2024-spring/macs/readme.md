@@ -27,9 +27,10 @@
 * Therefore, it will be better if some program can be used to analyze alginate microparticles in the aspect of size, number, and circularity of whole sample pictures as once and display the results as histogram of size of nanoparticle or tendency graph. In this study, R programm will be used for improving the analyzing algiante microparticles process as workflow below :
   ##### Workflow
 
+<img width="994" alt="Screenshot 2024-04-08 at 10 09 11 PM" src="https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/164750221/9c81b681-324d-4c1c-a8d0-09ab67a070ea">
 
+-----
 
-  
 #### Links
 1. 
 
