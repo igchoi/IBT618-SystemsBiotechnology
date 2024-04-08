@@ -21,9 +21,9 @@ Why do it?
 ------
 ### Data list
   
-  - GSM5699202: Free-living cells with maltose rep 1; Zobellia galactanivorans; RNA-Seq  https://www.ncbi.nlm.nih.gov/sra/SRX13191408[accn]
-  - GSM5699203: Free-living cells with maltose rep 2; Zobellia galactanivorans; RNA-Seq  https://www.ncbi.nlm.nih.gov/sra/SRX13191409[accn]
-  - GSM5699204: Free-living cells with maltose rep 3; Zobellia galactanivorans; RNA-Seq  https://www.ncbi.nlm.nih.gov/sra/SRX13191410[accn]
+  - GSM5699202: Free-living cells with maltose rep 1; Zobellia galactanivorans; RNA-Seq  / https://www.ncbi.nlm.nih.gov/sra/SRX13191408[accn]
+  - GSM5699203: Free-living cells with maltose rep 2; Zobellia galactanivorans; RNA-Seq  / https://www.ncbi.nlm.nih.gov/sra/SRX13191409[accn]
+  - GSM5699204: Free-living cells with maltose rep 3; Zobellia galactanivorans; RNA-Seq  / https://www.ncbi.nlm.nih.gov/sra/SRX13191410[accn]
 
 #### Links
 1. [RU_RNASeq Workflow](https://rockefelleruniversity.github.io/RU_RNAseq/)
