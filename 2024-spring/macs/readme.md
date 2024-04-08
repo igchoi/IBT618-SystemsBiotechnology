@@ -8,7 +8,7 @@ The interesting technique the can give the precised results without cell-to-cell
 
 #adding picture of single cell analysis
 
-<img width="587" alt="Screenshot 2024-04-08 at 8 38 19 PM" src="https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/164750221/b3f9ad29-401a-41c0-a423-5e5ce870fde3">
+<img width="587" alt="Screenshot 2024-04-08 at 8 38 19 PM" src="https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/164750221/b8f907d3-3de2-4824-81c1-0da5f5d68052">
 
 
 -----
