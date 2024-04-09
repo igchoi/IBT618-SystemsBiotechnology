@@ -16,3 +16,6 @@
 ----
 ### Preparation of amplicon data (reads)
 * Data were analyzed using Daqu samples from the CSBL.
+----
+### Link
+* https://benjjneb.github.io/dada2/tutorial.html
