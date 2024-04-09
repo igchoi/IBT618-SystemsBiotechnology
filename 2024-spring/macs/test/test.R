@@ -1,4 +1,4 @@
-img_test <- image_import("/Users/mackia/Desktop/test.jpg",
+img_test <- image_import("picture_path",
                          which = 1,
                          pattern = NULL,
                          path = NULL,
