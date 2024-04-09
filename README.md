@@ -13,6 +13,9 @@
 * Check [library](https://library.korea.ac.kr/) - there are plenty of reference books for python codings
 * __Evaluation is on your *activity* rather than your *performance* (e.g. how frequently commit/update your codes/documents/discussions)__ 
 
+### Links
+* [Learn Bioconductor](https://github.com/Bioconductor/LearnBioconductor)
+
 ---
 ### Term projects 
 - You can choose following topics or suggest your own term project
