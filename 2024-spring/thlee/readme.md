@@ -18,6 +18,16 @@
 #### Data lists
 - testis circular RNA Sequencing_biological replicate 1
 https://www.ncbi.nlm.nih.gov/sra/SRX21899255[accn]
+- testis circular RNA Sequencing_biological replicate 2
+https://www.ncbi.nlm.nih.gov/sra/SRX21899240[accn]
+- testis circular RNA Sequencing_biological replicate 3
+https://www.ncbi.nlm.nih.gov/sra/SRX21899241[accn]
+- ovary circular RNA Sequencing_biological replicate 1
+https://www.ncbi.nlm.nih.gov/sra/SRX21899252[accn]
+- ovary circular RNA Sequencing_biological replicate 2
+https://www.ncbi.nlm.nih.gov/sra/SRX21899253[accn]
+- ovary circular RNA Sequencing_biological replicate 3
+https://www.ncbi.nlm.nih.gov/sra/SRX21899254[accn]
 #### Questions to be solved by the class project
 
 
