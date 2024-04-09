@@ -4,7 +4,7 @@
 
 ``` r
 library(pliman)
-img_test <- image_import("/Users/mackia/Desktop/TC_998.jpg",
+img_test <- image_import("image path",  
   which = 1,
   pattern = NULL,
   path = NULL,
