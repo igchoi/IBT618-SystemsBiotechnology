@@ -1,13 +1,13 @@
 # Class project
-## Title : Identification of Differentially Expressed Genes from RNAseq data
+## Title : Identification of Differentially Expressed Genes from marine heterotrophic bacterial RNAseq data
 -------- 
 ### Introduction
 * Data: publicly available marine heterotrophic bacteria grown on different carbon sources
   - where can I get the public data (raw reads)? [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra)
   - search keyword: `(marine bacteria carbon source) AND "Zobellia galactanivorans"[orgn:__txid63186] `
+
 #### Background
-Why do it?
-* To identify changes in genes or mechanisms that occur under certain conditions and either suppress them or induce more expression.
+* Purpose: To identify transcriptional changes in gene levels or to understand mechanisms that occur under certain conditions and either suppress them or induce more expression.
 -------
 ![image](https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165700031/1ac46226-16a1-4c94-a514-24e8c32f4599)
 
