@@ -9,7 +9,7 @@
 Why do it?
 * To identify changes in genes or mechanisms that occur under certain conditions and either suppress them or induce more expression.
 -------
-![image](https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165700031/91bd24e3-56e5-443e-b9a7-ed2d8caa5382)
+![image](https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165700031/1ac46226-16a1-4c94-a514-24e8c32f4599)
 
   - Check Quality : The process of filtering out low-quality parts of something fetched via Rfastp
   - Read Sample : Sorting and calculations for the sequences 
@@ -34,6 +34,7 @@ https://www.ncbi.nlm.nih.gov/sra/SRX13191403[accn]
   - GSM5699198: Free-living cells with alginate rep 3; Zobellia galactanivorans; RNA-Seq   
 https://www.ncbi.nlm.nih.gov/sra/SRX13191404[accn]
 
+------
 #### Links
 1. [RU_RNASeq Workflow](https://rockefelleruniversity.github.io/RU_RNAseq/)
 2. [Bioconductor Courses & Workshops](https://www.bioconductor.org/help/course-materials/)
