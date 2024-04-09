@@ -1,9 +1,8 @@
-* Microscopic picture acquiring from alginate microparticle production was added to process
+## Microparticle analysis procedure
+-------
+#### 1. Adding picture to R program
 
-![TC_998](https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/164750221/9317fd64-e9db-4a3e-bb66-e3398034a1b4)
-
-=====================================
-# Adding picture to R program
+``` r
 library(pliman)
 img_test <- image_import("/Users/mackia/Desktop/TC_998.jpg",
   which = 1,
@@ -13,28 +12,38 @@ img_test <- image_import("/Users/mackia/Desktop/TC_998.jpg",
   plot = TRUE,
   nrow = NULL,
   ncol = NULL)
-  
-=====================================
-  # Adjusting theshold of picture
 
+```
+
+![TC_998](https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/164750221/9317fd64-e9db-4a3e-bb66-e3398034a1b4)
+
+-------
+#### 2. Adjusting theshold of picture
+
+``` r
 img_test2 <- image_binary(img_test)
+``` 
 
+![binary_test](https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/164750221/99af6bed-3211-4843-aa87-ba0fe9c79023)
 
+-------
+#### 3. Identifying microparticles by using bright intensity (BI)
 
-
-
-==============================================
-# Identifying microparticles by using bright intensity (BI)
+``` r
 img_res <- analyze_objects(img_test,
                            marker = "id",
                            index = "BI",
                            lower_noise = 1
                            )
 
+``` 
 
+![Resolution_test](https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/164750221/01140df9-94e7-4bbd-b7ef-763eef0aab46)
 
-=====================================
-# gaining results and creating result to histogram
+-------
+#### 4. Gaining results and creating result to histogram
+
+``` r
 
 result <- get_measures(img_res, dpi = 100)
 library(ggplot2)
@@ -48,8 +57,9 @@ HT_size <- ggplot(data = result) +
         axis.text.y = element_text(size=10),
         legend.position = "bottom") +
   labs(title = "Size Distribution")
-
 print(HT_size)
+
+``` 
 
 
 
