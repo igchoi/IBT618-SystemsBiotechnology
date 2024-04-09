@@ -1,4 +1,6 @@
 # 1. Install and load dada2
+
+``` r
 site="https://mirrors.tuna.tsinghua.edu.cn/CRAN"
 if(!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager",repo=site)
@@ -8,6 +10,7 @@ library(dada2)
 install.packages("Rcpp")
 library(Rcpp)
 packageVersion("dada2")
+``` 
 
 # 2. Creation of a path to link the folder containing the fastq files
 path <- "/Users/livia/Desktop/Daqu sample/R analysis/Rawdata" 
