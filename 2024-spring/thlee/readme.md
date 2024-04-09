@@ -16,22 +16,22 @@
 ![images_large_10 1177_1010428318795761-fig2](https://github.com/Taeheon-L/hi/assets/165758630/d2919ce2-5c27-4bec-8e51-44be716748dd)
 
 #### Data lists
-- testis circular RNA Sequencing_biological replicate 1
+- SRX21899255: testis circular RNA Sequencing_biological replicate 1
 https://www.ncbi.nlm.nih.gov/sra/SRX21899255[accn]
-- testis circular RNA Sequencing_biological replicate 2
+- SRX21899240: testis circular RNA Sequencing_biological replicate 2
 https://www.ncbi.nlm.nih.gov/sra/SRX21899240[accn]
-- testis circular RNA Sequencing_biological replicate 3
+- SRX21899241: testis circular RNA Sequencing_biological replicate 3
 https://www.ncbi.nlm.nih.gov/sra/SRX21899241[accn]
-- ovary circular RNA Sequencing_biological replicate 1
+- SRX21899252: ovary circular RNA Sequencing_biological replicate 1
 https://www.ncbi.nlm.nih.gov/sra/SRX21899252[accn]
-- ovary circular RNA Sequencing_biological replicate 2
+- SRX21899253: ovary circular RNA Sequencing_biological replicate 2
 https://www.ncbi.nlm.nih.gov/sra/SRX21899253[accn]
-- ovary circular RNA Sequencing_biological replicate 3
+- SRX21899254: ovary circular RNA Sequencing_biological replicate 3
 https://www.ncbi.nlm.nih.gov/sra/SRX21899254[accn]
+
 #### Questions to be solved by the class project
 
 
 #### Links
 1. [RU_RNAseq tutorial using Bioconductor packages](https://rockefelleruniversity.github.io/RU_RNAseq/)
 2. [CircRNAprofiler](https://bioconductor.org/packages/release/bioc/html/circRNAprofiler.html)
-3. 
