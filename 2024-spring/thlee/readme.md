@@ -31,7 +31,8 @@ https://www.ncbi.nlm.nih.gov/sra/SRX21899253[accn]
 https://www.ncbi.nlm.nih.gov/sra/SRX21899254[accn]
 
 #### Questions to be solved by the class project
-
+* Is it for discovery of new circRNAs?
+* Is it for identification of differentially expressed circRNAs?
 
 #### Links
 1. [RU_RNAseq tutorial using Bioconductor packages](https://rockefelleruniversity.github.io/RU_RNAseq/)
