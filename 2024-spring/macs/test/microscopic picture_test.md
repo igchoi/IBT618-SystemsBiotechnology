@@ -1,4 +1,4 @@
-## Microparticle analysis procedure
+## Microparticle analysis_prototype
 -------
 #### 1. Adding picture to R program
 
