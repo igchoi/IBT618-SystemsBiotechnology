@@ -30,8 +30,9 @@
 <img width="994" alt="Screenshot 2024-04-08 at 10 09 11 PM" src="https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/164750221/9c81b681-324d-4c1c-a8d0-09ab67a070ea">
 
 -----
-
+#### Tools
+* Tool named "pliman" will be used and adapted for this study.
 #### Links
-1. 
+1. https://github.com/TiagoOlivoto/pliman
 
 
