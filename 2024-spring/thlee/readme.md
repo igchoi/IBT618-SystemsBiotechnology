@@ -13,7 +13,11 @@
 
 * workflow of cirRNA-seq
 -------
+![images_large_10 1177_1010428318795761-fig2](https://github.com/Taeheon-L/hi/assets/165758630/d2919ce2-5c27-4bec-8e51-44be716748dd)
 
+#### Data lists
+- testis circular RNA Sequencing_biological replicate 1
+https://www.ncbi.nlm.nih.gov/sra/SRX21899255[accn]
 #### Questions to be solved by the class project
 
 
