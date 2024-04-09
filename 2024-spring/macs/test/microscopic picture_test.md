@@ -61,14 +61,5 @@ print(HT_size)
 
 ``` 
 
+![Histogram_test](https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/164750221/68a88cce-666d-4c06-8d1a-25719a1e93bb)
 
-
-
-
-
-
-
-
-
-
-=====================================
