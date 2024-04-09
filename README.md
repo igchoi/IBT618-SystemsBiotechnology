@@ -14,6 +14,8 @@
 * __Evaluation is on your *activity* rather than your *performance* (e.g. how frequently commit/update your codes/documents/discussions)__ 
 
 ### Links
+* [따라하는 데이터과학](https://dataninja.me/ipds-kr/slides-ppt/)
+  - `dplyr` package (`tidyverse`)
 * [Learn Bioconductor](https://github.com/Bioconductor/LearnBioconductor)
 
 ---
