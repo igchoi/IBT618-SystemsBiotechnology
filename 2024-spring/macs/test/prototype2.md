@@ -11,13 +11,13 @@
 ``` r
 library(pliman)
 # set scale from hemocytometer
-scale_50um_20X <- image_import("# full path of hemocytometer picture",
+scale_50um_20X <- image_import("#full path of hemocytometer scale picture",
                                resize = F,
                                plot = T)
 dpi(scale_50um_20X)
 # 157412.1
 
-scale_50um_10X <- image_import("# full path of hemocytometer picture",
+scale_50um_10X <- image_import("#full path of hemocytometer scale picture",
                                resize = F,
                                plot = T)
 dpi(scale_50um_10X)
