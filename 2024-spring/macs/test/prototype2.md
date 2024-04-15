@@ -205,20 +205,20 @@ combinebead <- data.frame(combine_diameter)
 * histogram and raw data of analyzed file as .csv will be exported
 
 ``` r
-  
-BuildHT <- function(a){
-  return(ggplot(data = a)+
-           aes(x = a$combine_diameter, y = ..density..) +
+BuildHT <- ggplot(data = combinebead)+
+           aes(x = combinebead$combine_diameter, y = ..density..) +
            geom_histogram() +
            geom_density(alpha = 0.3, fill = "red") +
            labs(x="Bead size (um)", y="Density") +
            theme_minimal() +
            theme(axis.text.x = element_text(size=10),
                  axis.text.y = element_text(size=10),
-                 legend.position = "bottom"))
-}
+                 legend.position = "bottom")
 
-BuildHT(combinebead)
+
+write_csv(combine_SUM, "SUMMARY OF DATA.csv")
+
+getwd()
 
 ```
 
