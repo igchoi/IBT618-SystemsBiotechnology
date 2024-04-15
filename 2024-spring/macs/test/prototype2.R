@@ -175,16 +175,18 @@ combine_diameter <- c(result1_F$diam_mean, result2_F$diam_mean, result3_F$diam_m
 combinebead <- data.frame(combine_diameter)
 
 #set function for creating HT
-BuildHT <- function(a){
-  return(ggplot(data = a)+
-           aes(x = a$combine_diameter, y = ..density..) +
+BuildHT <- ggplot(data = combinebead)+
+           aes(x = combinebead$combine_diameter, y = ..density..) +
            geom_histogram() +
            geom_density(alpha = 0.3, fill = "red") +
            labs(x="Bead size (um)", y="Density") +
            theme_minimal() +
            theme(axis.text.x = element_text(size=10),
                  axis.text.y = element_text(size=10),
-                 legend.position = "bottom"))
-}
+                 legend.position = "bottom")
 
-BuildHT(combinebead)
+
+write_csv(combine_SUM, "SUMMARY OF DATA.csv")
+
+getwd()
+
