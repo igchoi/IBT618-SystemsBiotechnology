@@ -11,13 +11,13 @@
 ``` r
 library(pliman)
 # set scale from hemocytometer
-scale_50um_20X <- image_import("/Users/mackia/Desktop/TC_944.jpg",
+scale_50um_20X <- image_import("# full path of hemocytometer picture",
                                resize = F,
                                plot = T)
 dpi(scale_50um_20X)
 # 157412.1
 
-scale_50um_10X <- image_import("/Users/mackia/Desktop/TC_945.jpg",
+scale_50um_10X <- image_import("# full path of hemocytometer picture",
                                resize = F,
                                plot = T)
 dpi(scale_50um_10X)
@@ -30,7 +30,7 @@ dpi(scale_50um_10X)
 ```r
 
 #1
-img_1 <- image_import("/Users/mackia/Desktop/TC_998.jpg",
+img_1 <- image_import("#full path of prototype_Img1",
                       which = 1,
                       pattern = NULL,
                       path = NULL,
@@ -40,7 +40,7 @@ img_1 <- image_import("/Users/mackia/Desktop/TC_998.jpg",
                       ncol = NULL)
 
 #2
-img_2 <- image_import("/Users/mackia/Desktop/TC_1140.jpg",
+img_2 <- image_import("#full path of prototype_Img2",
                       which = 1,
                       pattern = NULL,
                       path = NULL,
@@ -50,7 +50,7 @@ img_2 <- image_import("/Users/mackia/Desktop/TC_1140.jpg",
                       ncol = NULL)
 
 #3
-img_3 <- image_import("/Users/mackia/Desktop/TC_1068.jpg",
+img_3 <- image_import("#full path of prototype_Img3",
                       which = 1,
                       pattern = NULL,
                       path = NULL,
@@ -60,7 +60,7 @@ img_3 <- image_import("/Users/mackia/Desktop/TC_1068.jpg",
                       ncol = NULL)
 
 #4
-img_4 <- image_import("/Users/mackia/Desktop/TC_1087.jpg",
+img_4 <- image_import("#full path of prototype_Img4",
                       which = 1,
                       pattern = NULL,
                       path = NULL,
@@ -70,7 +70,7 @@ img_4 <- image_import("/Users/mackia/Desktop/TC_1087.jpg",
                       ncol = NULL)
 
 #5
-img_5 <- image_import("/Users/mackia/Desktop/TC_1022.jpg",
+img_5 <- image_import("#full path of prototype_Img5",
                       which = 1,
                       pattern = NULL,
                       path = NULL,
