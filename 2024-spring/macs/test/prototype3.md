@@ -6,8 +6,7 @@
 ### 1. Created folder
 First, we have to create folder including 5 microscopic picture of one condition with any name. However, microscopic picutures have to be set with "Img1" to "Img5". Moreover, we have to create  folder named "result inside the created folder.
 
-
-
+<img width="844" alt="Screenshot 2024-04-22 at 11 40 03 PM" src="https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/164750221/005a750b-2d25-4775-a34f-f9a07c67c56c">
 
 ### 2. Downloaded function for analyzing result
 
