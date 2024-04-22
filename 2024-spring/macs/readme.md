@@ -24,7 +24,7 @@
 #### Question to be solved by class project
 * As mention above, morphology, size, and also number of alginate microparticles is important factors for using in single cell analysis and also other works. Normally, morphology, size, and number of alginate microparticles can be calculated by ImageJ from microscopic capture. However, it can analyze only one picture per process and the gained result willl be analyzed again for making "histogram" or tendency graph by other applications.
 
-* Therefore, it will be better if some program can be used to analyze alginate microparticles in the aspect of size, number, and circularity of whole sample pictures as once and display the results as histogram of size of nanoparticle or tendency graph. In this study, R programm will be used for improving the analyzing algiante microparticles process as workflow below :
+* Therefore, it will be better if some program can be used to analyze alginate microparticles in the aspect of size, number, and circularity of whole sample pictures as once and display the results as histogram of size of microparticle or tendency graph. In this study, R programm will be used for improving the analyzing alginate microparticles process as workflow below :
   ##### Workflow
 
 <img width="994" alt="Screenshot 2024-04-08 at 10 09 11 PM" src="https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/164750221/9c81b681-324d-4c1c-a8d0-09ab67a070ea">
