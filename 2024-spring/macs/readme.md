@@ -36,8 +36,8 @@
 1. https://github.com/TiagoOlivoto/pliman
 
 #### 4/23/24 suggestion
-1. building a webapp
-2. summary report using R
-3. will check the required packages for building applications
+1. building a webapp (using [shinyR](https://mastering-shiny.org/basic-app.html))
+   * example [tutorial](https://mrchypark.github.io/dabrp_classnote3/class8#1)
+3. summary report using R markdown
 
 
