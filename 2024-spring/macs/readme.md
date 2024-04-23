@@ -35,4 +35,9 @@
 #### Links
 1. https://github.com/TiagoOlivoto/pliman
 
+#### 4/23/24 suggestion
+1. building a webapp
+2. summary report using R
+3. will check the required packages for building applications
+
 
