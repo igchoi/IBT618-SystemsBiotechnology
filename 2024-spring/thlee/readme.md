@@ -38,7 +38,7 @@ https://www.ncbi.nlm.nih.gov/sra/SRX21847129[accn]
 1. [RU_RNAseq tutorial using Bioconductor packages](https://rockefelleruniversity.github.io/RU_RNAseq/)
 2. [CircRNAprofiler](https://bioconductor.org/packages/release/bioc/html/circRNAprofiler.html)
 
-####QC
+#### QC
 - file:///D:/sratoolkit.current-win64/sratoolkit.3.1.0-win64/bin/SRR26133767.lite.1_1_fastqc.html
 - file:///D:/sratoolkit.current-win64/sratoolkit.3.1.0-win64/bin/SRR26133767.lite.1_2_fastqc.html
 - file:///D:/sratoolkit.current-win64/sratoolkit.3.1.0-win64/bin/SRR26133768.lite.1_1_fastqc.html
