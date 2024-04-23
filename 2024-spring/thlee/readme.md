@@ -17,22 +17,22 @@
 ![images_large_10 1177_1010428318795761-fig2](https://github.com/Taeheon-L/hi/assets/165758630/d2919ce2-5c27-4bec-8e51-44be716748dd)
 -------
 #### Data lists
-- SRX21899255: testis circular RNA Sequencing_biological replicate 1
-https://www.ncbi.nlm.nih.gov/sra/SRX21899255[accn]
-- SRX21899240: testis circular RNA Sequencing_biological replicate 2
-https://www.ncbi.nlm.nih.gov/sra/SRX21899240[accn]
-- SRX21899241: testis circular RNA Sequencing_biological replicate 3
-https://www.ncbi.nlm.nih.gov/sra/SRX21899241[accn]
-- SRX21899252: ovary circular RNA Sequencing_biological replicate 1
-https://www.ncbi.nlm.nih.gov/sra/SRX21899252[accn]
-- SRX21899253: ovary circular RNA Sequencing_biological replicate 2
-https://www.ncbi.nlm.nih.gov/sra/SRX21899253[accn]
-- SRX21899254: ovary circular RNA Sequencing_biological replicate 3
-https://www.ncbi.nlm.nih.gov/sra/SRX21899254[accn]
+- GSM7794632: HUVECs treatment with intersectant hypoxia [IH1]; Homo sapiens; ncRNA-Seq
+https://www.ncbi.nlm.nih.gov/sra/SRX21847130[accn]
+- GSM7794633: HUVECs treatment with intersectant hypoxia [IH2]; Homo sapiens; ncRNA-Seq
+https://www.ncbi.nlm.nih.gov/sra/SRX21847131[accn]
+- GSM7794634: HUVECs treatment with intersectant hypoxia [IH3]; Homo sapiens; ncRNA-Seq
+https://www.ncbi.nlm.nih.gov/sra/SRX21847132[accn]
+- GSM7794629: HUVECs treatment with control [CK1]; Homo sapiens; ncRNA-Seq
+https://www.ncbi.nlm.nih.gov/sra/SRX21847127[accn]
+- GSM7794630: HUVECs treatment with control [CK2]; Homo sapiens; ncRNA-Seq
+https://www.ncbi.nlm.nih.gov/sra/SRX21847128[accn]
+- GSM7794631: HUVECs treatment with control [CK3]; Homo sapiens; ncRNA-Seq
+https://www.ncbi.nlm.nih.gov/sra/SRX21847129[accn]
 
 #### Questions to be solved by the class project
-* Is it for discovery of new circRNAs?
-* Is it for identification of differentially expressed circRNAs?
+* Is it for discovery of new circRNAs? no
+* Is it for identification of differentially expressed circRNAs? yes
 
 #### Links
 1. [RU_RNAseq tutorial using Bioconductor packages](https://rockefelleruniversity.github.io/RU_RNAseq/)
