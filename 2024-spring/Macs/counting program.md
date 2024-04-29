@@ -1,4 +1,4 @@
-# Prototype 3
+# Counting program
 * right now we can upload only one folder including 5 microscopic picture inside and then analyze result easily!
 * However, we can use this code only we have 5 pictures per condition.
 ------
