@@ -89,7 +89,7 @@ write.csv(seqtab.nochim,file="/Users/livia/Desktop/kombucha/16s/Rawdata/filtered
           qmethod = c("escape", "double"),fileEncoding = "")
 ```
 ------
-# 13. Assign taxonomy
+### 13. Assign taxonomy
 ```r
 taxa <- assignTaxonomy(seqtab.nochim, paste0(path, "/silva_nr_v132_train_set.fa.gz"), multithread=TRUE)
 taxa <- addSpecies(taxa, paste0(path, "/silva_species_assignment_v132.fa.gz"))
