@@ -38,4 +38,5 @@ https://www.ncbi.nlm.nih.gov/sra/SRX13191404[accn]
 #### Links
 1. [RU_RNASeq Workflow](https://rockefelleruniversity.github.io/RU_RNAseq/)
 2. [Bioconductor Courses & Workshops](https://www.bioconductor.org/help/course-materials/)
-
+3. https://github.com/alfonsosaera/RNAseq
+4. https://www.kola.kr/course/course_view.jsp?id=12434&page=7#cview2
