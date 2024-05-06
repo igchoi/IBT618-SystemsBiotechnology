@@ -42,22 +42,30 @@ Richness <- specnumber(tASV, MARGIN = 2)
 ```r
 index <- as.data.frame(cbind(Shannon, Simpson, Richness))
 ```
+<img width="325" alt="image" src="https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165759135/01d21feb-a691-409b-b15d-f7bbb9a15aa4">
+
 #### 3) Calculate obs, chao, ace indices
 ```r
 obs_chao_ace <- t(estimateR(ASV))
 obs_chao_ace <- obs_chao_ace[rownames(index),]
 ```
+<img width="419" alt="image" src="https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165759135/5dfe07ca-f206-4344-a634-322cb3e9b8c2">
+
 #### 4) Combine the obs, chao, and ace indices with the results of the previous index calculations
 ```r
 index$Chao <- obs_chao_ace[,2]
 index$Ace <- obs_chao_ace[,4]
 index$obs <- obs_chao_ace[,1]
 ```
+<img width="474" alt="image" src="https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165759135/dea25937-dded-4652-9a28-840fff9ff132">
+
 #### 5) Calculating Pielou and Coverage
 ```r
 index$Pielou <- Shannon / log(Richness, 2)
 index$Goods_coverage <- 1 - colSums(tASV ==1) / colSums(tASV)
 ```
+<img width="644" alt="image" src="https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165759135/d308b8b1-6813-4aaf-ab6d-60c2568e3cfa">
+
 #### 6) Export Forms
 ```r
 write.table(cbind(sample=c(rownames(index)),index),'diversity.index.txt',row.names=F,sep = '\t', quote =F)
@@ -75,10 +83,14 @@ index$samples <- rownames(index)
 ```r
 groups <- read.delim('group.txt',header=T,stringsAsFactors = F)
 ```
+<img width="213" alt="image" src="https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165759135/e4eef239-102f-4e65-a0fe-145e4bfce393">
+
 ###### Merging grouping information with diversity indices
 ```r
 df1 <- merge(index,groups,by = 'samples')
-``` 
+```
+<img width="725" alt="image" src="https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165759135/c43586f8-dd67-45f0-8349-bbc4961a745a">
+
 #### 2) Plotting
 ##### Setting color
 ```r
@@ -102,7 +114,7 @@ a <- ggbarplot(df1,x = "group",y="Shannon",fill = "group",
         axis.text.y = element_text(size=10,colour = "black",face = "bold",hjust = 0.5),
         axis.title.y = element_text(vjust = 0.2,size = 12, face = "bold"))
 ```
-![Shannon](https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165759135/b84d3d03-46fe-462e-9ee7-47739fec9bc5)
+![Shannon](https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165759135/d82beac2-dde8-4db0-8018-3684c63b6626)
 
 ##### Simpson
 ```r
@@ -179,4 +191,5 @@ library("cowplot")
 plot_grid(a,b,c,d,labels = c("A","B","C","D"),ncol = 4, nrow = 1)
 ggsave('diversity.pdf',width = 12, height = 4)
 ```
-![diversity](https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165759135/eaf95c58-934d-44bf-894a-e414699f7d69)
+![diversity](https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165759135/8bbdaa7d-eb1f-42b1-893b-19a1929bcafe)
+
