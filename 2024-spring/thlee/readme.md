@@ -23,10 +23,9 @@ The DESeq2 R package (1.20.0) was utilized to perform differential expression an
 (with two biological replicates per condition).
 ```
 
+While the paper are used different mapping programs (such as HISAT2, BWA, and Bowtie2) and two pipelines (e.g. find_circ and CIRI), I will use the most current version of [`circRNAprofiler`](https://bioconductor.org/packages/release/bioc/vignettes/circRNAprofiler/inst/doc/circRNAprofiler.html) from the [Bioconductor]() package. The `circRNAprofiler` package relies on the pre-computed circRNA identification using popular circRNA annotation pipelines. The overview of the `circRNAprofiler` procedure is shown in the [`circRNAprofiler`](https://bioconductor.org/packages/release/bioc/vignettes/circRNAprofiler/inst/doc/circRNAprofiler.html) tutorial.
 
-![스크린샷 2024-05-07 151252](https://github.com/Taeheon-L/0430/assets/165758630/5a9586cf-04f3-4e53-9f69-6e3118b16f9a)
-
-
+To do this `circRNAprofiler` package or any discovery pipelines, the first step is to map QCed reads to the reference genome (here, human genome). The mapped reads are recorded in files (e.g. `BAM` [format](https://hhj6212.github.io/biology/tech/2020/08/26/Bioinformatics-fileformats.html)). Once `BAM` files were made, I can move to the next step (annotation of circRNAs). The typical read mapping procedure can be found in elsewhere.
 
 -------
 #### Data lists
