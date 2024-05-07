@@ -31,6 +31,11 @@ https://www.ncbi.nlm.nih.gov/sra/SRX13191410[accn]
 https://www.ncbi.nlm.nih.gov/sra/SRX13191403[accn]
   - GSM5699198: Free-living cells with alginate rep 3; Zobellia galactanivorans; RNA-Seq   
 https://www.ncbi.nlm.nih.gov/sra/SRX13191404[accn]
+------
+### Result
+ - mds
+![2024_spr_mds](https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165700031/60a02f2b-b998-41b8-b187-19e853df59d0)
+
 
 ------
 #### Links
