@@ -33,6 +33,8 @@ rm -rf ~/miniconda3/miniconda.sh
 ```
 * WSL 터미널에서 리눅스환경을 이용합니다.
 
+### Large DATA sharing
+Github is limited by large data sharing. Large data sharing for the publication can be possible by [several free sites](https://communities.springernature.com/posts/help-my-data-are-too-large-to-share). [`Figshare+`](https://knowledge.figshare.com/plus) or [`Zenodo`](https://help.zenodo.org/) can be used for sharing your data.
 
 ### Links
 * [따라하는 데이터과학](https://dataninja.me/ipds-kr/slides-ppt/)
