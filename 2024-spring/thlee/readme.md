@@ -11,7 +11,8 @@ Fig. 1 in [Ref1](https://www.frontiersin.org/articles/10.3389/fmolb.2017.00038/f
 
 * Workflow of cirRNA-seq
 
-![images_large_10 1177_1010428318795761-fig2](https://github.com/Taeheon-L/hi/assets/165758630/d2919ce2-5c27-4bec-8e51-44be716748dd)
+![스크린샷 2024-05-07 151252](https://github.com/Taeheon-L/0430/assets/165758630/5a9586cf-04f3-4e53-9f69-6e3118b16f9a)
+
 -------
 #### Data lists
 - GSM7794632: HUVECs treatment with intersectant hypoxia [IH1]; Homo sapiens; ncRNA-Seq
@@ -34,3 +35,4 @@ https://www.ncbi.nlm.nih.gov/sra/SRX21847129[accn]
 #### Links
 1. [RU_RNAseq tutorial using Bioconductor packages](https://rockefelleruniversity.github.io/RU_RNAseq/)
 2. [CircRNAprofiler](https://bioconductor.org/packages/release/bioc/html/circRNAprofiler.html)
+3. [published paper](https://www.nature.com/articles/s41598-024-51471-3#Sec2)
