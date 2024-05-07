@@ -1,8 +1,6 @@
-# Class project
-## Title : Identification of Differentially Expressed Genes from marine heterotrophic bacterial RNAseq data
--------- 
+## Identification of Differentially Expressed Genes from Marine Heterotrophic Bacterial RNAseq data
 ### Introduction
-* Data: publicly available marine heterotrophic bacteria grown on different carbon sources
+RNAseq data is publicly available for a marine heterotrophic bacteria grown on different carbon sources. For example, the raw reads of *Zobellia galactanivorans* are found in **SRA** (sequence archive) of **NCBI**.
   - where can I get the public data (raw reads)? [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra)
   - search keyword: `(marine bacteria carbon source) AND "Zobellia galactanivorans"[orgn:__txid63186] `
 
