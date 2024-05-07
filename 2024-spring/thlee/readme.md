@@ -10,22 +10,37 @@ Fig. 1 in [Ref1](https://www.frontiersin.org/articles/10.3389/fmolb.2017.00038/f
 In this class project, I will download the public ncRNAseq data from [SRA NCBI]() and practice the processing of data using the workflow of cirRNA-seq analysis is in the following figure of [Ref2](). The raw data is available from the [SRA]() database under the [Bioproject ID: PRJNA1019680](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1019680). The analytic procedure in the original publication is followed.
 
 ```
-The paired-end raw reads were trimmed, and the quality was controlled by Trimmomatic (v0.39)18 and FastQC (v0.11.9)
-with default parameters. The genome website provided the reference genome and gene model annotation files directly.
-The Hisat2 v2.0.5 tool was used to build the index of the reference genome and align paired-end clean reads to the
-reference genome. Hisat2 was chosen as the mapping tool due to its capability to generate a splice junction database
-based on the gene model annotation file, which provided improved mapping results. We used find_circ19 and CIRI220
-to detect and identify circRNAs. First, BWA21 was used to compare the clean data with the reference genome.
+The paired-end raw reads were trimmed, and the quality was controlled by Trimmomatic (v0.39)18
+and FastQC (v0.11.9) with default parameters.
+The Hisat2 v2.0.5 tool was used to build the index of the reference genome
+and align paired-end clean reads to the reference genome.
+Hisat2 was chosen as the mapping tool due to its capability to generate a splice junction database
+based on the gene model annotation file, which provided improved mapping results.
+We used find_circ19 and CIRI220 to detect and identify circRNAs.
+First, BWA21 was used to compare the clean data with the reference genome.
 Then, CIRI scans SAM files and detects junction reads with paired chiastic clipping (PCC) signals,
 paired end mapping (PEM) and GT-AG splicing signals.
-Find_circ obtains junction reads via Bowtie222. The circos figure was constructed utilizing the Circos software.
-The DESeq2 R package (1.20.0) was utilized to perform differential expression analysis for two conditions/groups
-(with two biological replicates per condition).
+Find_circ obtains junction reads via Bowtie222.
+The circos figure was constructed utilizing the Circos software.
+The DESeq2 R package (1.20.0) was utilized to perform differential expression analysis
+for two conditions/groups (with two biological replicates per condition).
 ```
 
 While the paper are used different mapping programs (such as HISAT2, BWA, and Bowtie2) and two pipelines (e.g. find_circ and CIRI), I will use the most current version of [`circRNAprofiler`](https://bioconductor.org/packages/release/bioc/vignettes/circRNAprofiler/inst/doc/circRNAprofiler.html) from the [Bioconductor]() package. The `circRNAprofiler` package relies on the pre-computed circRNA identification using popular circRNA annotation pipelines. The overview of the `circRNAprofiler` procedure is shown in the [`circRNAprofiler`](https://bioconductor.org/packages/release/bioc/vignettes/circRNAprofiler/inst/doc/circRNAprofiler.html) tutorial.
 
 To do this `circRNAprofiler` package or any discovery pipelines, the first step is to map QCed reads to the reference genome (here, human genome). The mapped reads are recorded in files (e.g. `BAM` [format](https://hhj6212.github.io/biology/tech/2020/08/26/Bioinformatics-fileformats.html)). Once `BAM` files were made, I can move to the next step (annotation of circRNAs). The typical read mapping procedure can be found in elsewhere.
+
+#### Methods
+##### Read mapping to genome
+###### Bowtie2
+1. install mini-conda as described in [the class title page](https://github.com/igchoi/IBT618-SystemsBiotechnology/tree/main).
+2. install `bowtie2` using `conda` (example)
+```
+conda create -n circ
+conda activate circ
+conda install bowtie2
+```
+3. follow the instuction for the mapping ([phage genome example](https://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#getting-started-with-bowtie-2-lambda-phage-example)
 
 -------
 #### Data lists
