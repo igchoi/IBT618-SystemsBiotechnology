@@ -7,7 +7,22 @@ circRNA is a non-coding RNA(ncRNA) that forms covalently closed loop and often a
 
 Fig. 1 in [Ref1](https://www.frontiersin.org/articles/10.3389/fmolb.2017.00038/full) circRNA splicing. circRNAs are created by non-canonical splicing process known as “backsplicing.” A downstream splice donor is joined to an upstream splice acceptor. circRNAs can be exonic, intronic or a combination of both. Colored bars = exons. Black lines = introns.
 
-In this class project, I will download the public ncRNAseq data from [SRA NCBI]() and practice the processing of data using the workflow of cirRNA-seq analysis is in the following figure of [Ref2](). The raw data is available from the [SRA]() database under the [Bioproject ID: PRJNA1019680](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1019680)
+In this class project, I will download the public ncRNAseq data from [SRA NCBI]() and practice the processing of data using the workflow of cirRNA-seq analysis is in the following figure of [Ref2](). The raw data is available from the [SRA]() database under the [Bioproject ID: PRJNA1019680](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1019680). The analytic procedure in the original publication is followed.
+
+```
+The paired-end raw reads were trimmed, and the quality was controlled by Trimmomatic (v0.39)18 and FastQC (v0.11.9)
+with default parameters. The genome website provided the reference genome and gene model annotation files directly.
+The Hisat2 v2.0.5 tool was used to build the index of the reference genome and align paired-end clean reads to the
+reference genome. Hisat2 was chosen as the mapping tool due to its capability to generate a splice junction database
+based on the gene model annotation file, which provided improved mapping results. We used find_circ19 and CIRI220
+to detect and identify circRNAs. First, BWA21 was used to compare the clean data with the reference genome.
+Then, CIRI scans SAM files and detects junction reads with paired chiastic clipping (PCC) signals,
+paired end mapping (PEM) and GT-AG splicing signals.
+Find_circ obtains junction reads via Bowtie222. The circos figure was constructed utilizing the Circos software.
+The DESeq2 R package (1.20.0) was utilized to perform differential expression analysis for two conditions/groups
+(with two biological replicates per condition).
+```
+
 
 ![스크린샷 2024-05-07 151252](https://github.com/Taeheon-L/0430/assets/165758630/5a9586cf-04f3-4e53-9f69-6e3118b16f9a)
 
