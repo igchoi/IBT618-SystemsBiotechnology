@@ -35,10 +35,11 @@ https://www.ncbi.nlm.nih.gov/sra/SRX13191404[accn]
 ### Result
  - mds
 ![2024_spr_mds](https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165700031/60a02f2b-b998-41b8-b187-19e853df59d0)
-
+ - heatmap
+![Result](https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165700031/41c4fd82-178e-499a-9c7d-91d67dceb2e7)
 
 ------
-#### Links
+### Links
 1. [RU_RNASeq Workflow](https://rockefelleruniversity.github.io/RU_RNAseq/)
 2. [Bioconductor Courses & Workshops](https://www.bioconductor.org/help/course-materials/)
 3. https://github.com/alfonsosaera/RNAseq
