@@ -3,8 +3,8 @@ library(pliman)
 
 # upload file by using only one FOLDER!!!
 
-input1 <- "/Users/mackia/Desktop/EEEEEE"
-input2 <- "/Users/mackia/Desktop/RRR"
+input1 <- "/Users/mackia/Desktop/Folder1"
+input2 <- "/Users/mackia/Desktop/Folder2"
 
 
 ip <-data.frame(input1, input2)
