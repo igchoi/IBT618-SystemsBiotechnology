@@ -189,10 +189,10 @@ for (comparison in names(result.tables)) {
 }
 
 # MDS plot for sample quality
+grp = all.gcounts
 png(file = file.path(root_dir, paste(project_name, '_MDS_all_samples.png', sep = '')), width = 2000, height = 2000, res = 300)
 plotMDS(dge, col = as.numeric(factor(conditions)), pch = 16, cex = 1.5, main = "MDS Plot of all samples")
 dev.off()
-
 
 # Raw count
 tt.raw.counts <- dge$counts
@@ -264,6 +264,4 @@ if (length(unique(grp)) > 1) {
 } else {
   cat("At least two groups are required for heatmap visualization.\n")
 }
-
-
 
