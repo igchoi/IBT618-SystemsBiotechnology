@@ -10,7 +10,7 @@ library(pliman)
 
 ```
 
-# upload file by using only one FOLDER!!!
+# Upload file by using only one FOLDER!!!
 
 ```r
 
@@ -70,7 +70,7 @@ for(x in ip)
   }
 
 ```
-  # upload picture to R for calculating
+  # Upload picture to R for calculating
 
 ``` r 
   for(x in 1:npic){
@@ -87,7 +87,7 @@ for(x in ip)
 
 ```
 
-  # adjust threshold and analyze picture
+  # Adjust threshold and analyze picture
 
 ```r  
   for(y in 1:npic){
@@ -163,7 +163,7 @@ for(x in ip)
   combinebead <- combine_sum %>% select(diam_mean)
   ```
 
-# set function for creating HT
+# Set function for creating HT
   
   ```r
 BuildHT_SUM <- ggplot(data = combinebead)+
@@ -196,7 +196,7 @@ BuildHT_SUM <- ggplot(data = combinebead)+
   
 ```
 
-  # export Histogram_SUM
+  # Export Histogram_SUM
 
 ```r
   png(paste(path_result, "Histogram summary.png", sep = "/"))
