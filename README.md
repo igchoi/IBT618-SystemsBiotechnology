@@ -3,7 +3,7 @@
 ### Term project guideline
 * All individual projects will be maintained in the [Github `IBT618` repository](https://github.com/igchoi/IBT618-SystemsBiotechnology/2024-spring/)
   * What is `Git` and `Github`?
-    * __using Git is not an obligation__
+    __!! Using Git is not an obligation !!__
     * [생활코딩 Git](https://opentutorials.org/module/3733/22434)
     * [What is `Github`?](https://www.youtube.com/watch?v=w3jLJU7DT5E)
 
@@ -13,6 +13,9 @@
 * You can use [`jupyter notebook`](https://jupyter.org/) too
 * Check [library](https://library.korea.ac.kr/) - there are plenty of reference books for python codings
 * __Evaluation is on your *activity* rather than your *performance* (e.g. how frequently commit/update your codes/documents/discussions)__ 
+
+### How to install R & RStudio
+* [Download installation programs](https://posit.co/download/rstudio-desktop/)
 
 ### How to install miniconda (to make `conda` environemnt)
 * What is [conda]()? 프로그래밍 가상환경
