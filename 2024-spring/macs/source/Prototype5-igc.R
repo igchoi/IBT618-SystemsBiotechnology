@@ -51,15 +51,6 @@ numberOfFrames(img1, type = "render") # 5 images
 getFrame(img1,1, type="render") # "render" gets a single image
 getFrames(img1, type="render")
 ##
-##
-micrometer <- function(a) { return(a*10000) }
-Anabead <- function(a) { return(get_measures(a, dpi = 79016) %>% micrometer()) }  # 79016 dpi? 
-Filterbead <- function(df) { 
-  return(df %>% filter(circularity_norm > 6000 & circularity > 20000) %>% 
-           select(id, diam_mean, area, circularity, circularity_norm) %>% 
-           arrange(circularity_norm))
-  } 
-##
 
 ##
 ## each images in 'img1' object is called, analyzed...
