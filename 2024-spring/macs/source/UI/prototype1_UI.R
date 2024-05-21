@@ -1,3 +1,5 @@
+#This part is analyzing part
+====================================================
 library(tidyverse)
 library(pliman) # requires Bioconductor package - EBImage
 library(EBImage)
@@ -106,9 +108,15 @@ microsizer <- function(a){
 }
 
 #==========================================================================
+# This part is interactive Web application.
+
+#First, 3 packages were used for making interactive Web
 library(shiny)
 library(bslib)
 library(ggplot2)
+
+# Designing interactive Webpage
+##
 ui <- fluidPage(
   titlePanel("microbead sizer"),
   sidebarLayout(
@@ -133,7 +141,7 @@ ui <- fluidPage(
            plotOutput(outputId = "HT")))),
   )
       
-  
+  # Connecting input and output to server
 server <- function(input, output) {
       
       output$HTSUM <- renderPlot({
