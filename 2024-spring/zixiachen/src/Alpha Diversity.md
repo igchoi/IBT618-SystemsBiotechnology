@@ -1,4 +1,16 @@
 ## Alpha Diversity
+Alpha diversity is primarily used to study the community diversity within a particular habitat (or sample). It can be assessed through a series of alpha diversity indices to obtain information on the richness, diversity, and other aspects of species within an environmental community.
+
+Indices reflecting community richness include: sobs, chao, ace.
+
+Indices reflecting community diversity include: shannon, simpson.
+
+Indices reflecting community evenness include: simpsoneven, shannoneven, Pielou_e.
+
+Indices reflecting community coverage include: coverage.
+
+Indices reflecting phylogenetic diversity include: PD.
+
 ------
 ### 1. Installation and loading of packages
 ```r
