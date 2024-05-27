@@ -167,5 +167,5 @@ P
 ggsave("Gunes.pdf",P,width=8,height=7)
 ```
 ------
-<img width="754" alt="image" src="https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165759135/b2525903-0e76-4e78-9626-a6ebd34ffd78">
+<img width="752" alt="image" src="https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165759135/e15627d5-83f7-4389-8d49-96d76a27c864">
 
