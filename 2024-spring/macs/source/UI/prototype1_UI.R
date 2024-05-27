@@ -109,12 +109,11 @@ microsizer <- function(a){
 
 #==========================================================================
 # This part is interactive Web application.
-
 library(shiny)
 library(shinyFiles) 
 library(bslib)
+library(DT)
 library(ggplot2)
-
 library(shinyDirectoryInput)
 
 
@@ -126,20 +125,25 @@ ui <- fluidPage(
       verbatimTextOutput("value"),
       fluidRow(
         column(3, actionButton("do", label = "Analyze")),
-        column(3, actionButton("Download", label = "Results"))
+        column(3, actionButton("Download", label = "Export"))
         
       )
       
     ),
     mainPanel(
-      card(card_header(class = "black", h5("SUMMARY")),
+      wellPanel(h4("OVERALL"),
+           DTOutput(outputId = "SUM")
+      ),
+      card(card_header(class = "black", h4("SIZE")),
            plotOutput(outputId = "HTSUM")
       ),
-      card(card_header(class = "black", h5("DENSITY HISTOGRAM")), 
+      card(card_header(class = "black", h4("DENSITY")), 
            plotOutput(outputId = "HTDEN")
       ),
-      card(card_header(class = "black", h5("HISTOGRAM")),
-           plotOutput(outputId = "HT")))),
+      card(card_header(class = "black", h4("HISTOGRAM")),
+           plotOutput(outputId = "HT"))
+      )
+    ),
 )
 
 
@@ -195,7 +199,7 @@ server <- function(input, output, session) {
                 axis.line = element_line(colour = "black"),
                 legend.text = element_text(size=15),
                 title = element_text(size=12))
-        
+
       })
     })
     
@@ -245,7 +249,9 @@ server <- function(input, output, session) {
       })
     })
     
+    output$SUM <- renderDT(EEE, options = list(pageLength =5))
     
+   
     
   })
   })
@@ -254,6 +260,5 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui = ui, server = server)
-
 
 
