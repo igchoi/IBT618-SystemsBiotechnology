@@ -1,4 +1,8 @@
 ## Relative abundance of bacterial communities
+Based on the results of taxonomic analysis, the community structure composition at various taxonomic levels (such as domain, kingdom, phylum, class, order, family, genus, species, and ASV) for different groups (or samples) can be determined. 
+
+The community bar chart intuitively presents two key pieces of information: (1) the types of microorganisms present in each sample at a specific taxonomic level; and (2) the relative abundance (proportion) of each microorganism within the samples.
+
 ------
 ### 1. Installation and loading of packages
 ```r
