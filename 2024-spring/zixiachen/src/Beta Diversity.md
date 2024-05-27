@@ -1,4 +1,6 @@
 ## Beta Diversity
+Beta analysis is a method used to compare the diversity between different habitats or samples.  It focuses on assessing the differences in species composition between environments, rather than within a single environment.  Beta diversity provides insights into the turnover of species from one habitat to another and helps in understanding the patterns and drivers of diversity across spatial scales.
+
 ------
 ### 1. Installation and loading of packages
 ```r
