@@ -110,44 +110,74 @@ microsizer <- function(a){
 #==========================================================================
 # This part is interactive Web application.
 
-#First, 3 packages were used for making interactive Web
 library(shiny)
+library(shinyFiles) 
 library(bslib)
 library(ggplot2)
 
-# Designing interactive Webpage
-##
+library(shinyDirectoryInput)
+
+
 ui <- fluidPage(
   titlePanel("microbead sizer"),
   sidebarLayout(
     sidebarPanel(
-      textInput("text", label = h3("Folder Path")),
+      directoryInput('directory', label = 'select a directory', value = '~'),
+      verbatimTextOutput("value"),
       fluidRow(
-        column(2, actionButton("do", label = "GO"),
-               textOutput(outputId = "pathname")),
+        column(3, actionButton("do", label = "Analyze")),
+        column(3, actionButton("Download", label = "Results"))
         
-      column(2, actionButton("Download", label = "Results"))
       )
       
     ),
     mainPanel(
-      card(card_header(class = "bg-dark", h5("SUMMARY")),
+      card(card_header(class = "black", h5("SUMMARY")),
            plotOutput(outputId = "HTSUM")
       ),
-      card(card_header(class = "bg-dark", h5("DENSITY HISTOGRAM")), 
+      card(card_header(class = "black", h5("DENSITY HISTOGRAM")), 
            plotOutput(outputId = "HTDEN")
       ),
-      card(card_header(class = "bg-dark", h5("HISTOGRAM")),
+      card(card_header(class = "black", h5("HISTOGRAM")),
            plotOutput(outputId = "HT")))),
-  )
+)
+
+
+server <- function(input, output, session) {
+  observeEvent(
+    ignoreNULL = TRUE,
+    eventExpr = {
+      input$directory
+    },
+    handlerExpr = {
+      if (input$directory > 0) {
+        # condition prevents handler execution on initial app launch
+        
+        # launch the directory selection dialog with initial path read from the widget
+        pp = choose.dir(default = readDirectoryInput(session, 'directory'))
+        
+        # update the widget value
+        updateDirectoryInput(session, 'directory', value = pp)
+      }})
+  
+  output$value = renderText({
+   
+    isolate({
+      pp = choose.dir(default = readDirectoryInput(session, 'directory'))
+      pp
       
-  # Connecting input and output to server
-server <- function(input, output) {
-      
-      output$HTSUM <- renderPlot({
-        input$do
-        isolate({
-          EEE <- microsizer(input$text)
+    })
+  })
+  
+  
+  observe({
+    input$do
+    
+    isolate({
+    pp = choose.dir(default = readDirectoryInput(session, 'directory'))
+    EEE <- microsizer(pp)
+    output$HTSUM <- renderPlot({
+      isolate({
         ggplot(data = EEE)+
           aes(x = EEE$diam_mean, y = ..density..)+
           geom_histogram(alpha =0.4, fill = "azure2", col = "azure3")+
@@ -165,61 +195,65 @@ server <- function(input, output) {
                 axis.line = element_line(colour = "black"),
                 legend.text = element_text(size=15),
                 title = element_text(size=12))
-         
+        
       })
+    })
+    
+    ###
+    output$HTDEN <- renderPlot({
+      isolate({
+        ggplot(data = EEE)+
+          aes(x = EEE$diam_mean, y = ..density..)+
+          geom_density(alpha = 0.4, fill = "#008b8b") +
+          scale_x_continuous(expand=c(0, 0)) +
+          scale_y_continuous(expand=c(0, 0)) +
+          labs(x="Bead size (um)", y="Density") +
+          theme_minimal() +
+          theme(axis.text.x = element_text(size=10),
+                axis.text.y = element_text(size=10),
+                legend.position = "bottom",
+                plot.title = element_text(hjust = 0.5),
+                panel.grid.major = element_blank(),
+                panel.grid.minor = element_blank(),
+                axis.line = element_line(colour = "black"),
+                legend.text = element_text(size=15),
+                title = element_text(size=12))
+        
       })
+    })
+    
 
-      ###
-      output$HTDEN <- renderPlot({
-        input$do
-        isolate({
-          AAA <- microsizer(input$text)
-          ggplot(data = AAA)+
-            aes(x = AAA$diam_mean, y = ..density..)+
-            geom_density(alpha = 0.4, fill = "#008b8b") +
-            scale_x_continuous(expand=c(0, 0)) +
-            scale_y_continuous(expand=c(0, 0)) +
-            labs(x="Bead size (um)", y="Density") +
-            theme_minimal() +
-            theme(axis.text.x = element_text(size=10),
-                  axis.text.y = element_text(size=10),
-                  legend.position = "bottom",
-                  plot.title = element_text(hjust = 0.5),
-                  panel.grid.major = element_blank(),
-                  panel.grid.minor = element_blank(),
-                  axis.line = element_line(colour = "black"),
-                  legend.text = element_text(size=15),
-                  title = element_text(size=12))
-          
-        })
+    output$HT <- renderPlot({
+      isolate({
+        ggplot(data = EEE)+
+          aes(x = EEE$diam_mean, y = ..density..)+
+          geom_histogram(alpha =0.4, fill = "azure3", col = "black") +
+          scale_x_continuous(expand=c(0, 0)) +
+          scale_y_continuous(expand=c(0, 0)) +
+          labs(x="Bead size (um)", y="Density") +
+          theme_minimal() +
+          theme(axis.text.x = element_text(size=10),
+                axis.text.y = element_text(size=10),
+                legend.position = "bottom",
+                plot.title = element_text(hjust = 0.5),
+                panel.grid.major = element_blank(),
+                panel.grid.minor = element_blank(),
+                axis.line = element_line(colour = "black"),
+                legend.text = element_text(size=15),
+                title = element_text(size=12))
+        
       })
+    })
+    
+    
+    
+  })
+  })
   
-      
-    ##
-      output$HT <- renderPlot({
-        input$do
-        isolate({
-          BBB <- microsizer(input$text)
-          ggplot(data = BBB)+
-            aes(x = BBB$diam_mean, y = ..density..)+
-            geom_histogram(alpha =0.4, fill = "azure3", col = "black") +
-            scale_x_continuous(expand=c(0, 0)) +
-            scale_y_continuous(expand=c(0, 0)) +
-            labs(x="Bead size (um)", y="Density") +
-            theme_minimal() +
-            theme(axis.text.x = element_text(size=10),
-                  axis.text.y = element_text(size=10),
-                  legend.position = "bottom",
-                  plot.title = element_text(hjust = 0.5),
-                  panel.grid.major = element_blank(),
-                  panel.grid.minor = element_blank(),
-                  axis.line = element_line(colour = "black"),
-                  legend.text = element_text(size=15),
-                  title = element_text(size=12))
-          
-        })
-      })
-      
+
 }
 
 shinyApp(ui = ui, server = server)
+
+
+
