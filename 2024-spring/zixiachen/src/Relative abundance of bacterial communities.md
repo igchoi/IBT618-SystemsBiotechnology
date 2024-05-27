@@ -84,7 +84,8 @@ P
 ggsave("Phylum.pdf",P,width=8,height=7)
 ```
 -----
-<img width="755" alt="image" src="https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165759135/a5de7764-6407-4cec-abce-7028e91d662c">
+<img width="753" alt="image" src="https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/165759135/9542cc84-17e3-4092-9277-61e20d9c3420">
+
 
 ### 3. Genus level
 #### 1) Obtaining Genus table
