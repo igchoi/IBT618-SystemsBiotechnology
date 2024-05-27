@@ -1,4 +1,6 @@
 ## Assign Taxonomy
+"Assigned taxonomy" refers to the process of grouping and labelling biological sequences (e.g. DNA or RNA sequences) into taxonomic hierarchies. These hierarchies typically include domains, phyla, phylums, orders, families, genera, and species. The process involves comparing the sequences with reference databases to determine the best match and assigning the appropriate taxonomic rank. The aim is to determine the identity and relationships of organisms in a given sample to aid in the study of biodiversity, ecology and evolutionary biology.
+ 
 ------
 ### 1. Install and load dada2
 ```r
