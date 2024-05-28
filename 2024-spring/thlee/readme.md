@@ -61,6 +61,9 @@ https://www.ncbi.nlm.nih.gov/sra/SRX21847128[accn]
 - GSM7794631: HUVECs treatment with control [CK3]; Homo sapiens; ncRNA-Seq
 https://www.ncbi.nlm.nih.gov/sra/SRX21847129[accn]
 
+##### find_circ
+* Finding circRNA using find_circ [https://github.com/marvin-jens/find_circ](https://github.com/marvin-jens/find_circ)
+
 #### Questions to be solved by the class project
 * Is it for discovery of new circRNAs? no
 * Is it for identification of differentially expressed circRNAs? yes
