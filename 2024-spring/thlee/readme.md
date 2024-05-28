@@ -40,10 +40,14 @@ conda create -n circ
 conda activate circ
 conda install bowtie2
 ```
-3. follow the instuction for the mapping ([phage genome example](https://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#getting-started-with-bowtie-2-lambda-phage-example)
+3. follow the instuction for the mapping ([phage genome example](https://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#getting-started-with-bowtie-2-lambda-phage-example))
+##### SRA-toolkit
+NCBI SRA toolkit - https://github.com/ncbi/sra-tools/wiki
+* SRA download - [how to download SRA data](https://www.ncbi.nlm.nih.gov/sra/docs/sradownload/)
+  
+###### Data lists
+[SRA data](https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=SRP462463&o=acc_s%3Aa&s=SRR26133767,SRR26133768,SRR26133769,SRR26133770,SRR26133771,SRR26133772)
 
--------
-#### Data lists
 - GSM7794632: HUVECs treatment with intersectant hypoxia [IH1]; Homo sapiens; ncRNA-Seq
 https://www.ncbi.nlm.nih.gov/sra/SRX21847130[accn]
 - GSM7794633: HUVECs treatment with intersectant hypoxia [IH2]; Homo sapiens; ncRNA-Seq
