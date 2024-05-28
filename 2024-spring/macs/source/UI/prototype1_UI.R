@@ -108,7 +108,6 @@ microsizer <- function(a){
 }
 
 #==========================================================================
-# This part is interactive Web application.
 library(shiny)
 library(shinyFiles) 
 library(bslib)
@@ -123,27 +122,26 @@ ui <- fluidPage(
     sidebarPanel(
       directoryInput('directory', label = 'select a directory', value = '~'),
       verbatimTextOutput("value"),
-      fluidRow(
-        column(3, actionButton("do", label = "Analyze")),
-        column(3, actionButton("Download", label = "Export"))
-        
-      )
-      
-    ),
+      actionButton("do", label = "Next sample")),
+  
     mainPanel(
       wellPanel(h4("OVERALL"),
-           DTOutput(outputId = "SUM")
+                DTOutput(outputId = "SUM")
       ),
-      card(card_header(class = "black", h4("SIZE")),
-           plotOutput(outputId = "HTSUM")
+      wellPanel(h4("SIZE"),
+                downloadButton("EXHTSUM"),
+                plotOutput(outputId = "HTSUM")
       ),
-      card(card_header(class = "black", h4("DENSITY")), 
-           plotOutput(outputId = "HTDEN")
+      wellPanel(h4("DENSITY"), 
+                downloadButton("EXHTDEN"),
+                plotOutput(outputId = "HTDEN")
       ),
-      card(card_header(class = "black", h4("HISTOGRAM")),
-           plotOutput(outputId = "HT"))
-      )
-    ),
+      wellPanel(h4("HISTOGRAM"),
+                downloadButton("EXHT"),
+                plotOutput(outputId = "HT"))
+    )
+      
+    )
 )
 
 
@@ -164,21 +162,13 @@ server <- function(input, output, session) {
         updateDirectoryInput(session, 'directory', value = pp)
       }})
   
-  output$value = renderText({
-   
-    isolate({
-      pp = choose.dir(default = readDirectoryInput(session, 'directory'))
-      pp
-      
-    })
-  })
-  
   
   observe({
     input$do
     
     isolate({
     pp = choose.dir(default = readDirectoryInput(session, 'directory'))
+    output$value = renderText(pp)
     EEE <- microsizer(pp)
     output$HTSUM <- renderPlot({
       isolate({
@@ -250,7 +240,7 @@ server <- function(input, output, session) {
     })
     
     output$SUM <- renderDT(EEE, options = list(pageLength =5))
-    
+  
    
     
   })
@@ -260,5 +250,8 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui = ui, server = server)
+
+
+
 
 
