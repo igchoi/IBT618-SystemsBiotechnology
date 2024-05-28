@@ -129,15 +129,12 @@ ui <- fluidPage(
                 DTOutput(outputId = "SUM")
       ),
       wellPanel(h4("SIZE"),
-                downloadButton("EXHTSUM"),
                 plotOutput(outputId = "HTSUM")
       ),
       wellPanel(h4("DENSITY"), 
-                downloadButton("EXHTDEN"),
                 plotOutput(outputId = "HTDEN")
       ),
       wellPanel(h4("HISTOGRAM"),
-                downloadButton("EXHT"),
                 plotOutput(outputId = "HT"))
     )
       
@@ -172,7 +169,7 @@ server <- function(input, output, session) {
     EEE <- microsizer(pp)
     output$HTSUM <- renderPlot({
       isolate({
-        ggplot(data = EEE)+
+        BuildHT_SUM <- ggplot(data = EEE)+
           aes(x = EEE$diam_mean, y = ..density..)+
           geom_histogram(alpha =0.4, fill = "azure2", col = "azure3")+
           geom_density(alpha = 0.3, fill = "#f37735") +
@@ -189,14 +186,21 @@ server <- function(input, output, session) {
                 axis.line = element_line(colour = "black"),
                 legend.text = element_text(size=15),
                 title = element_text(size=12))
+        plot(BuildHT_SUM)
 
       })
+      
+      path_result <- paste(pp, "result", sep = "/")
+      png(paste(path_result, "Histogram summary.png", sep = "/"))
+      plot(BuildHT_SUM)
+      dev.off()
+      dev.set()
     })
     
     ###
     output$HTDEN <- renderPlot({
       isolate({
-        ggplot(data = EEE)+
+        BuildHT_DEN <- ggplot(data = EEE)+
           aes(x = EEE$diam_mean, y = ..density..)+
           geom_density(alpha = 0.4, fill = "#008b8b") +
           scale_x_continuous(expand=c(0, 0)) +
@@ -213,13 +217,21 @@ server <- function(input, output, session) {
                 legend.text = element_text(size=15),
                 title = element_text(size=12))
         
+        plot(BuildHT_DEN)
+        
       })
+      
+      path_result <- paste(pp, "result", sep = "/")
+      png(paste(path_result, "Histogram density.png", sep = "/"))
+      plot(BuildHT_DEN)
+      dev.off()
+      dev.set()
     })
     
 
     output$HT <- renderPlot({
       isolate({
-        ggplot(data = EEE)+
+        BuildHT_HT <- ggplot(data = EEE)+
           aes(x = EEE$diam_mean, y = ..density..)+
           geom_histogram(alpha =0.4, fill = "azure3", col = "black") +
           scale_x_continuous(expand=c(0, 0)) +
@@ -236,13 +248,17 @@ server <- function(input, output, session) {
                 legend.text = element_text(size=15),
                 title = element_text(size=12))
         
+        plot(BuildHT_HT)
       })
+      path_result <- paste(pp, "result", sep = "/")
+      png(paste(path_result, "Histogram.png", sep = "/"))
+      plot(BuildHT_HT)
+      dev.off()
+      dev.set()
     })
     
     output$SUM <- renderDT(EEE, options = list(pageLength =5))
   
-   
-    
   })
   })
   
@@ -250,8 +266,4 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui = ui, server = server)
-
-
-
-
 
