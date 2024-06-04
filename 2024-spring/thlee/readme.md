@@ -80,6 +80,7 @@ In Galaxy server, we can directly download reads data and mapping the reads into
 * Is it for identification of differentially expressed circRNAs? yes
  
 #### Links
-1. [RU_RNAseq tutorial using Bioconductor packages](https://rockefelleruniversity.github.io/RU_RNAseq/)
-2. [CircRNAprofiler](https://bioconductor.org/packages/release/bioc/html/circRNAprofiler.html)
-3. [published paper](https://www.nature.com/articles/s41598-024-51471-3#Sec2)
+1. [갤럭시 서버::RNA-seq raw data 부터 분석하는 방법 - 서버 없이!](https://hhj6212.github.io/pipeline/informatics/2021/03/07/RNAseq-pipeline.html)
+2. [RU_RNAseq tutorial using Bioconductor packages](https://rockefelleruniversity.github.io/RU_RNAseq/)
+3. [CircRNAprofiler](https://bioconductor.org/packages/release/bioc/html/circRNAprofiler.html)
+4. [published paper](https://www.nature.com/articles/s41598-024-51471-3#Sec2)
