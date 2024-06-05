@@ -73,6 +73,12 @@ Please, check how to find circRNA using find_circ [here](https://github.com/marv
 
 ### (2) using `Galaxy` server
 In Galaxy server, we can directly download reads data and mapping the reads into the reference genome. Please, check this GTN(galaxy tutorial network)::[transcriptomics](https://training.galaxyproject.org/training-material/topics/transcriptomics/) and [public workflow](https://usegalaxy.org/u/igchoi/w/unnamed-workflow-1) built during the class hours. The galaxy toolshed provides some [tools](https://toolshed.tools/#repos?q=circular%20rna) for circular RNA analysis. For example, this [tool::CIRCexplorer2]((https://toolshed.g2.bx.psu.edu/repository?repository_id=b30488c37fdc9083&changeset_revision=465d6578b4d0)) seems working for circular RNA analysis.
+#### Public Galaxy server
+1. [USA server (usegalaxy.org)](https://usegalaxy.org/) does not provide `CIRCexplorer2` but [EU server (usegalaxy.eu)](https://usegalaxy.eu) has [this tool](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcircexplorer2%2Fcircexplorer2%2F2.3.8%2Bgalaxy0&version=latest).
+2. open your account in the server
+#### Private Galaxy server (you have to install the server into your computer - PC, laptop...)
+1. Install Galaxy server locally in your computer by [the installation guide](https://galaxyproject.org/admin/get-galaxy/).
+2. Install tools by `admin` previlage.
 
 
 #### Questions to be solved by the class project
