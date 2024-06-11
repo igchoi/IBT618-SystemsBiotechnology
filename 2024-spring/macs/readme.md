@@ -30,14 +30,36 @@
 <img width="994" alt="Screenshot 2024-04-08 at 10 09 11 PM" src="https://github.com/igchoi/IBT618-SystemsBiotechnology/assets/164750221/9c81b681-324d-4c1c-a8d0-09ab67a070ea">
 
 -----
+# BeSIDE
+## Bead Size Distribution Estimator
+* BeSIDE (Bead Size Distribution Estimator) is the program created for estimate the size of microparticles by using many microscopic picture for analyzing before visualize in th form of various histograms and raw data.csv.  
+
+
+
+
+
+
+## Before Running 
+##### 1. Loading "BeSIDE.R" that is provided in datafolder
+##### 2. Setting folder for pictures that you want to analyze. Each picture has to rename as Img1, Img2, Img3,... before analyzing step. Further, inside this folder, creating one folder named "result" to prepare the place for gaining analyzed results. Nite that this version can be applied with microscopic picture with 10X or magnitude equal as 100 only.
+ 
+
+
+
+
+ ##### 3. Run "BeSIDE.R" for opening application for analyzing results
+ * 3.1 Select color that you want to design the histogram graph. For assuring that your selected color is set, click "SET" button. If the meassage "Your update is complete mean your selected color is already set. If you want to reset color as default, you can just click "RESET" button.
+   
+ * 3.2 For selecting folder "CLICK RUN BUTTON ONE TIME" for choosing the folder that has your microscopic pictures inside. After choosing, system will run autonomically. Please waiting until text  "Analysis is done" happened. At this step all analyzed results will be collected in folder named "result" that you created at the beginning
+   
+ * 3.3 If you want to change color of design histogram graph, you can select color again and click "UPDATE" button for updating the new set color. The new design will be saved again and saved in the "result" folder instead of previous version autonomically.
+     
+     
+-----
 #### Tools
 * Tool named "pliman" will be used and adapted for this study.
 #### Links
 1. https://github.com/TiagoOlivoto/pliman
 
-#### 4/23/24 suggestion
-1. building a webapp (using [shinyR](https://mastering-shiny.org/basic-app.html))
-   * example [tutorial](https://mrchypark.github.io/dabrp_classnote3/class8#1)
-3. summary report using R markdown
 
 
